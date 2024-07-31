@@ -91,7 +91,7 @@ resource "aws_instance" "dev" {
     subnet_id = aws_subnet.dev.id
     availability_zone = "ap-southeast-1a"
     tags = {
-        Name = "dev-ec8"
+        Name = "dev-2"
     }
 }
 
@@ -110,7 +110,6 @@ resource "aws_dynamodb_table" "dynamodb-terraform-state-lock" {
     type = "S"
   }
 }
-
 
 
 
