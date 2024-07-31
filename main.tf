@@ -55,7 +55,7 @@ resource "aws_security_group" "dev" {
     name   = "allow traffic"
     description = "Allow TLS inbound traffic and all outbound traffic"
     tags = {
-        Name = "cust_dev_sg"
+        Name = "cust_dev_s"
     }
     ingress {
         description = "TLS from VPC"
