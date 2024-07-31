@@ -91,7 +91,7 @@ resource "aws_instance" "dev" {
     subnet_id = aws_subnet.dev.id
     availability_zone = "ap-southeast-1a"
     tags = {
-        Name = "Avanthi 2"
+        Name = "Avanthi 1"
     }
 }
 
