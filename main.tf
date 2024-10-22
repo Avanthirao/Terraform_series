@@ -5,8 +5,7 @@ resource "aws_vpc" "dev" {
     }
 }
 
-
-#create IG and attach to VPC
+//create IG and attach to VPC
 
 resource "aws_internet_gateway" "dev" {
 
@@ -17,7 +16,7 @@ resource "aws_internet_gateway" "dev" {
 
 }
 
-#create public subnet
+//create public subnet
 
 resource "aws_subnet" "dev" {
    vpc_id = aws_vpc.dev.id
@@ -30,7 +29,7 @@ resource "aws_subnet" "dev" {
 }
 
 
-#Create Route table
+//Create Route table
 
 resource "aws_route_table" "dev" {
     vpc_id = aws_vpc.dev.id
